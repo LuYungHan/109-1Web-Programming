@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index.html</title>
+    <link rel="icon shortcut" href="./images/檸檬.png">
+    <!-- Bootstrap https://getbootstrap.com/ -->
+    <!-- Bootstrap.min.css -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <!-- TODO: Customize Bootstrap CSS -->
+    <link rel="stylesheet" href="./scss/bootstrap.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- style.css -->
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    
+  
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">The Blog for Lego Lee</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section1">介紹</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section2">演藝作品</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section3">圖片集</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section4">小檸檬為何愛？</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section5">製作過程</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section6">workdisplay</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./firebase-firestore/form.html">FORM</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+    <!-- navbar end -->
+    <!-- mb-0可以把下方bottom留白拿掉 mt-0可以把上方top留白拿掉控制留白的好東西 -->
+    <div class="alert alert-secondary mt-0 mb-0">
+        歡迎來到這一個介紹李國毅的網站! 
+     </div>
+    <!-- header -->
+    <header id="header" class="jumbotron text-center text-white bg-dark">
+        <div class="container">
+            <h1>李國毅。</h1>
+            <p>在1986年1月22日出生於台灣新北市。現今以演員身分最廣為人知。
+                Instagram：@lllego////Facebook：李國毅
+            </p>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- section1 -->
+    <!-- 
+        Set the padding level for top && bottom to 5
+        ml-3 mr-3 => mx-3
+        mt-4 mb-4 => my-4
+    -->
+    <section id="section1" class="py-5">
+        <h1 class="section-title text-center text-secondary mb-5">Introduction</h1>
+        <div class="container">
+            <!-- Layout 3 cols in a row -->
+    
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-star fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">演員</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>做為一個演員，是李國毅最廣為人知的一個身分。</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-microphone fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">歌手</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>同時他也是一個深藏不漏的歌手呢!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-award fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">運動員</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>在他出道成為藝人之前，其實是一個體育選手。曾獲得台北市跳高冠軍</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Set the margin top level to 5 -->
+            <!-- 
+                Layout the cols below:
+                Place 6 cols in a row for medium device
+                Place 3 cols in a row for small device
+                Place 2 cols in a row for extra-small device(mobile version)
+            -->
+            <div class="row mt-5">
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-heart fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">#favorite</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-lemon fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">#小檸檬</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-paper-plane fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">#未來可期</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-dog fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">#愛狗人士</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-guitar fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">#演而優則唱</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-graduation-cap fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">#NTUs</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section1 end -->
+    <!-- section2 -->
+    <section id="section2" class="py-5 bg-secondary text-white">
+        <div class="container">
+            <h1 class="section-title mb-5 text-center">積累而成的優良作品</h1>
+            <!--  Center the col element  -->
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-md-8">
+                    <!-- Use Collapse interaction -->
+                    <button data-toggle="collapse" data-target="#article1" class="btn btn-primary">電視劇</button>
+                    <button data-toggle="collapse" data-target="#article2" class="btn btn-primary">歌曲</button>
+                    <article class="my-3 collapse show" id="article1">
+                        <h3>電視劇</h3>
+                        <p>2006年《極限燙衣板》、《心靈詩篇－騷動的青春》</p>
+                        <p>2008年《蜂蜜幸運草》</p>
+                        <p>2009年《比賽開始》、《蓮花雨》</p>
+                        <p>2010年《星光下的童話》</p>
+                        <P>2011年《勇士們》</P>
+                        <p>2012年《回家》</p>
+                        <p>2013年《我的自由年代》</p>
+                        <P>2014年《22K夢想高飛》</P>
+                        <P>2015年《料理高校生》</P>
+                        <p>2016年《我和我的十七歲》、《滾石愛情故事-我是真的付出我的愛》、《如朕親臨》</p>
+                        <p>2017年《麻醉風暴2》</p>
+                        <p>2018年《非常搭檔》、《1006的房客》</p>
+                        <p>2019年《靈異街11號》</p>
+                        <p>2020年《廢財闖天關》、《故事宮寓》、《金愛演真探團》</p>
+                    </article>
+                    <article class="my-3 collapse" id="article2">
+                        <h3>歌曲</h3>
+                        <p>2008年5月16日 《蜂蜜幸運草電視原聲帶》
+                                收錄：幸運草的祝福（Clover幸運草樂團：鄭元暢、彭于晏、李國毅、張鈞甯、伊藤千晃）
+                                收錄： Be My King（李國毅）
+                        </p>
+                         <p>2010年1月15日 《方子浩首張個人EP》
+                                收錄：因為你（詞、曲：李國毅）
+                                收錄：離開我的那一天（詞、曲：荒山亮）</p>
+                        <p>2010年4月20日 《星光下的童話電視原聲帶》
+                                收錄：愛是關鍵（詞：李國毅、荒山亮；曲：荒山亮）
+                                收錄：因為你（詞、曲：李國毅）
+                                收錄：老城外（詞、曲：荒山亮）
+                                收錄：離開我的那一天（詞、曲：荒山亮）
+                                收錄：去年的星光-男女合唱版（合唱：田中千繪）</p>
+                        <p>2013年2月 《【回家】電視原聲帶》
+                                收錄：只有月亮全看見（詞：姚謙、李叔同、陳哲甫；曲：張簡君偉、John.P.Ordway）</p>
+                        <p>2013年7月 《【世界第一麥方】電影原聲帶》[1]
+                                收錄：一條路一直走（詞：李國毅、林正盛、陳明章；曲：陳明章）</p>
+                        <p>2015年9月 《落跑吧愛情》電影原聲帶
+                                收錄：回到最初（詞：任賢齊)</p>   
+                        <p>2016年12月 《如朕親臨》電視劇插曲
+                                收錄：唯一（詞曲：田亞霍)</p>
+                        <p>2017年9月 《麻醉風暴2》電視劇片尾曲、插曲
+                                收錄：Never Give Up
+                                收錄：Save Life、No One Is the Outsider、困獸、白色殺手、Keep My Faith （全與BR合唱）</p>
+                        <p>2014年9月10日 《李國毅的自由旅行：EP+寫真》
+                            收錄：In A Good Way（詞、曲：李國毅）
+                            收錄：陪你幸福（詞、曲：李國毅）
+                            收錄：水瓶（詞：李國毅；曲：李國毅、黑男）</p>
+                    </article>
+                    <!-- Nav component -->
+                    <!-- Use Tab interaction -->
+                    <nav class="nav nav-pills">
+                        <a data-toggle="tab" class="nav-link active" href="#article3">電影</a>
+                        <a data-toggle="tab" class="nav-link" href="#article4">得獎紀錄</a>
+                    </nav>
+                    <div class="tab-content">
+                        <article id="article3" class="my-3 tab-pane active">
+                            <h3>電影</h3>
+                            <p>《單車上路》此為李國毅出道作品</p>
+                                <p>《黃金密碼》、《少年之家》、《城市美景之夜夜》、《愛的發聲練習》、《世界第一麥方》、《落跑吧愛情》、《藥草師》</p>
+                        </article>
+                        <article id="article4" class="my-3 tab-pane">
+                            <h3>得獎紀錄</h3>
+                                <table border=6 height=240 width=360px>
+                                    <tr><th colspan=5>包括提名、獲獎及入圍</tr>
+                                    <tr ><th>年份<th>頒獎典禮<th>獎項<th>作品<th>結果</tr>
+                                    <tr><th>2006<td>The Asian Festival of First Films<td>最佳男演員獎<td>單車上路<td>獲獎</tr>
+                                    <tr><th>2014<td>Milk award<td>年度最佳演員獎<td>我的自由年代<td>獲獎</tr>
+                                    <tr><th>2014<td>第三屆華劇大賞<td>最佳螢幕情侶獎<td>我的自由年代<td>獲獎</tr>
+                                    <tr><th>2014<td>第三屆華劇大賞<td>最佳接吻獎<td>我的自由年代<td>提名</tr>
+                                    <tr><th>2014<td>第三屆華劇大賞<td>微博兩岸三地人氣獎<td>我的自由年代<td>提名</tr>
+                                    <tr><th>2014<td>第三屆華劇大賞<td>最佳催淚獎<td>我的自由年代<td>提名</tr>
+                                    <tr><th>2014<td>第三屆華劇大賞<td>最佳男演員獎<td>我的自由年代<td>提名</tr>
+                                    <tr><th>2014<td>第三屆華劇大賞<td>最佳男演員獎<td>22K夢想高飛<td>提名</tr>
+                                    <tr><th>2015<td>第三屆華劇大賞<td>最佳螢幕情侶獎<td>22K夢想高飛<td>提名</tr>
+                                    <tr><th>2015<td>第四屆華劇大賞<td>華流雜誌年度最暢銷大獎<td>料理高校生<td>獲獎</tr>
+                                    <tr><th>2015<td>第四屆華劇大賞<td>最佳接吻獎<td>料理高校生<td>提名</tr>
+                                    <tr><th>2015<td>第四屆華劇大賞<td>最佳男演員獎<td>料理高校生<td>獲獎</tr>
+                                    <tr><th>2018<td>第53屆金鐘獎<td>戲劇節目男主角獎<td>麻醉風暴2<td>入圍</tr>
+                                    </table>
+                        </article>
+                    </div>
+                    <!-- Place a Youtube video  https://www.youtube.com/watch?v=gwDoRPcPxtc -->
+                     <!-- <iframe width="100%" height="315" src="https://www.youtube.com/embed/gwDoRPcPxtc" frameborder="0"  -->
+                        <!-- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  -->
+                          <!-- allowfullscreen></iframe>   -->
+                    <iframe width="100%" height="315"
+                      src="https://www.youtube.com/embed/QhQX-87TyXk" frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>https://www.youtube.com/embed/QhQX-87TyXk
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section2 end -->
+    <!-- TODO: Create a Carousel Component -->
+    <!-- b4-carousel-default -->
+
+    <!-- section3 -->
+    <section id="section3" class="mt-0 mb-0">
+            <!-- Carousel -->
+    <div id="carouselId" class="carousel slide" data-ride="carousel">
+        <!-- indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
+            <li data-target="#carouselId" data-slide-to="3"></li>
+            <li data-target="#carouselId" data-slide-to="4"></li>
+        </ol>
+        <!-- container for each pages -->
+        <div class="carousel-inner" role="listbox">
+            <!-- page 1 -->
+            <div class="carousel-item active">
+                <img width="100%" height="50%" src="./images/國毅1.JPG" alt="">
+            </div>
+            <!-- page 2 -->
+            <div class="carousel-item">
+                <img width="100%" height="50%" src="./images/國毅2.PNG" alt="">
+            </div>
+            <!-- page 3 -->
+            <div class="carousel-item">
+                <img width="100%" height="50%" src="./images/國毅3.JPG" alt="">
+            </div>
+            <!-- page 4 -->
+            <div class="carousel-item">
+                <img width="100%" height="50%" src="./images/國毅4.JPG" alt="">
+            </div>
+            <!-- page 5 -->
+            <div class="carousel-item">
+                <img width="100%" height="50%" src="./images/國毅5.PNG" alt="">
+            </div>
+        </div>
+        <!-- previous btn -->
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <!-- next btn -->
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- Carousel end -->
+    </section>
+    <!-- section3 end -->
+    <br><br>
+    <!-- section4 -->
+<section id="section4">
+    <div class="container-fluid">
+        <h1 class="section-title mb-5 text-center">喜歡上李國毅的過程和理由</h1>
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <!-- col -->
+            <div class="col col-md-4 col-sm-6">
+                <div class="col-card">
+                    <img src="./images/國毅6.JPG" class="w-100">
+                    <div class="col-card-body">
+                        <h3>我的自由年代</h3>
+                        <p>一開始就是從這一部戲認識他的。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- col end -->
+            <!-- col -->
+            <div class="col col-md-4 col-sm-6">
+                <div class="col-card">
+                    <img src="./images/國毅7.PNG" class="w-100">
+                    <div class="col-card-body">
+                        <h3>流浪狗威廉的爸爸!</h3>
+                        <p>之後漸漸地認識到他各種面向，包括演戲、唱歌、綜藝等等，都讓我覺得他真的是一個很棒的藝人。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- col end -->
+            <!-- col -->
+            <div class="col col-md-4 col-sm-6">
+                <div class="col-card">
+                    <img src="./images/國毅8.PNG" class="w-100">
+                    <div class="col-card-body">
+                        <h3>積極正面的價值觀</h3>
+                        <p>爆紅之後，不耍大牌，仍然待人和善。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- col end -->
+            <!-- col -->
+            <div class="col col-md-4 col-sm-6">
+                <div class="col-card">
+                    <img src="./images/國毅9.PNG" class="w-100">
+                    <div class="col-card-body">
+                        <h3>顏質在線>///< </h3>
+                        <p>告訴你，他今年35歲了，你相信嗎？</p>
+                    </div>
+                </div>
+            </div>
+            <!-- col end -->
+            <!-- col -->
+            <div class="col col-md-4 col-sm-6">
+                <div class="col-card">
+                    <img src="./images/國毅10.PNG" class="w-100">
+                    <div class="col-card-body">
+                        <h3>演技步步高升</h3>
+                        <p>開始演譯優質戲劇，入圍了金鐘獎!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- col end -->
+            <!-- col -->
+            <div class="col col-md-4 col-sm-6">
+                <div class="col-card">
+                    <img src="./images/國毅11.PNG" class="w-100">
+                    <div class="col-card-body">
+                        <h3>獨特眼光與主見</h3>
+                        <p>對時事有著自己的主見，不隨波逐流。</p>
+                    </div>
+                </div>
+            </div>
+            <!-- col end -->
+        </div>
+        <!-- row end -->
+    </div>
+    <!-- container end -->
+    </div>
+</section>
+<!-- section4 end -->
+
+<!-- section5 -->
+<section id="section5">
+    <div class="container-fluid">
+        <div class="row">
+        <div id="galleryImage9" class="col-md-4 col-sm-6 gallery-block">
+            <div class="gallery-text">小檸檬</div>
+        </div>
+            <div class="col-md-8">
+                <h2>製作過程遇到的困難</h2>
+                <p text-align ="right">
+                    在製作這一次的網頁美學的期中作業之中，我發現我其實遇到了很多的困難，像是沒有辦法順利地把課堂上內容，
+                    以我自己想要的呈現方式做出來，還有一些甚至忘記怎麼去做了，幸好還有上課時的ppt可以進行參考，才不至於
+                    全部都忘光光。還有要謝謝幫助我的朋友，在我求救的時候能在我旁邊教導我、幫助我，真的超級感謝的。總而言之，
+                    雖然我自己覺得，我是一個對電腦一竅不通的人，但我還是完成了網頁，在其中也真的學到了很多很多！</p>
+            </div>
+        </div>
+        </div>
+           
+</section>
+<!-- section5 end -->
+<!-- work display section -->
+<section id="section6" class="mt-5 mb-5">
+    <div class="container-fluid">
+            <!-- productListPane --> 
+                <h2>Work List</h2>
+                <div id="workRow" class="row py-5">
+                    
+                </div>
+            <!-- productListPane end -->
+    </div>
+</section>
+<!-- work display section end -->
+<style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #hourse {
+      width:186px;
+      height:141px; 
+      position:absolute;
+      background-image:url("hourse.jpg");
+      animation-name: oxxo;
+      animation-duration:1s;
+      animation-iteration-count:infinite;
+      animation-timing-function:step-start;
+    }
+  
+  @keyframes oxxo{
+      0%{
+        background-position:-15px -13px;
+      }
+      6.25%{
+        background-position:-210px -13px;
+      }
+      12.5%{
+        background-position:-403px -13px;
+      }
+      18.75%{
+        background-position:-592px -13px;
+      }
+      25%{
+        background-position:-15px -165px;
+      }
+      31.25%{
+          background-position:-210px -165px;
+      }
+      37.5%{
+          background-position:-403px -165px;
+      }
+      43.75%{
+          background-position:-592px -165px;
+      }
+      50%{
+        background-position:-15px -320px;
+      }
+      56.25%{
+        background-position:-210px -320px;
+      }
+      62.5%{
+        background-position:-403px -320px;
+      }
+      68.75%{
+        background-position:-592px -320px;
+      }
+      75%{
+        background-position:-15px -470px;
+      }
+      81.25%{
+        background-position:-210px -470px;
+      }
+      87.5%{
+        background-position:-403px -470px;
+      }
+      93.75%{
+        background-position:-592px -470px;
+      }
+      100%{
+        background-position:-592px -470px;
+      }
+  }
+  
+</style>
+<div id="hourse"></div>
+    <!-- footer -->
+    <footer id="footer" class="pt-5 bg-secondary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h4>Contact Us</h4>
+                    <a href="mailto:hwwhhw89@gmail.com">hwwhhw89@gmail.com</a>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase">Company</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Press</a>
+                        </li>
+                        <li>
+                            <a href="#">Bonus</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase">Product</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Enterprice</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Security</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 footer-list">
+                    <h5 class="text-uppercase">Resource</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Guilde</a>
+                        </li>
+                        <li>
+                            <a href="#">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="#">API</a>
+                        </li>
+                        <li>
+                            <a href="#">Events</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end bg-dark mt-5 py-2">
+            <h5 class="text-center">資工二 陸詠涵 108590451</h5>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- ad-box -->
+    <div class="ad-box">
+        <div class="left-part">
+            <button class="ad-toggle-btn">
+                <i class="fas fa-sort"></i>
+            </button>
+        </div>
+        <div class="right-part">
+            <img class="w-100" src="./images/header-image.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam ullam excepturi facilis aperiam.
+                Maiores mollitia nihil vitae ullam dolore?</p>
+        </div>
+    </div>
+    <!-- ad-box end -->
+    <button id="goBackBtn" class="bg-primary">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- main.js -->
+    <script src="./javascripts/main.js"></script>
+
+    <!-- updateProductModal end -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <!-- Firebase APP -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <!-- Firebase Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+    <script>
+        // TODO: Replace the following with your app's Firebase project configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB35MroYneMixN0vr6NchjyvtJcsmhtmdQ",
+            authDomain: "ntut-web-programing.firebaseapp.com",
+            projectId: "ntut-web-programing",
+            storageBucket: "ntut-web-programing.appspot.com",
+            messagingSenderId: "69979840506",
+            appId: "1:69979840506:web:0d134fb39decb9c42d4e43"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // Define Database(Cloud Firestore)
+        var db = firebase.firestore();
+    </script>
+</body>
+
+</html>

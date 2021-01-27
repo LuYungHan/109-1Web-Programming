@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 50px 0px;
+}
+
+.container {
+    max-width:1000px ;
+    margin: 50px auto;
+}
+
+.row {
+    display: flex ;
+    //Don't resize child element(如果沒做下面那行，它會自動縮放)
+    flex-wrap: wrap ;
+}
+
+.column {
+    //width: 33.3333%
+    width: calc(100%/4);
+    //padding是對內做留白
+    //padding:ｔｏｐ＆ｂｏｔｔｏｍ　ｌｅｆｔ＆ｒｉｇｈｔ；
+    //padding-top:  ;
+    padding: 0px 15px;
+}
+
+$box-shadow-color: rgba(51, 39, 48, 0.2);
+
+.card {
+    margin-bottom: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 3px $box-shadow-color;
+    &:hover {
+        box-shadow: 0px 6px 15px $box-shadow-color;
+    }
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    .card-body {
+        padding: 15px;
+        h4 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+        p {
+            margin-top: 3px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media(max-width: 600px){
+    .container{
+        width: 570px ;
+    }
+    .column{
+        width:100% ;
+    }
+}
+
+@media(min-width: 601px) and (max-width: 1000px){
+    .column{
+        width: 50% ;
+    }
+}

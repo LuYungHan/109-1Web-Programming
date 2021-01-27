@@ -1,0 +1,72 @@
+h1 {
+  color: red;
+}
+
+h2:hover {
+  color: yellowgreen;
+  background: #b11eb1;
+}
+
+h2 {
+  color: yellowgreen;
+  background: #e253e2;
+}
+
+h2:hover {
+  background: #b11eb1;
+}
+
+p {
+  color: gray;
+  background: #eee;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+header {
+  width: 100%;
+  height: 50vh;
+  background: #e253e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card {
+  width: 300px;
+  margin: 15px 15px;
+  -webkit-box-shadow: 1px 10px 15px black;
+          box-shadow: 1px 10px 15px black;
+}
+
+.card .card-body {
+  padding: 10px 10px;
+}
+
+.card img {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,245 @@
+/*=============================================
+=                   GENERAL                   =
+=============================================*/
+/* Tell the browser to account for any border 
+and padding in the values you specify for an element's
+ width and height. */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  /* Set default body margin to 0px */
+  margin: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*=============================================
+=                     FLEX                    =
+=============================================*/
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col {
+  width: calc(100%/3);
+  padding: 0px 15px;
+}
+
+.col-card {
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 3px 0px #2e8375;
+          box-shadow: 0px 3px 0px #2e8375;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  position: relative;
+  bottom: 0px;
+}
+
+.col-card:hover {
+  -webkit-box-shadow: 0px 10px 30px #2e8375;
+          box-shadow: 0px 10px 30px #2e8375;
+  bottom: 20px;
+}
+
+.col-card:hover img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.col-card img {
+  width: 100%;
+  display: block;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.col-card-body {
+  padding: 10px 10px;
+}
+
+.col-card-body h3 {
+  margin-top: 0px;
+}
+
+.col-card-body p {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+  .col {
+    width: 100%;
+  }
+  h3 {
+    color: red;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .container {
+    width: 570px;
+  }
+  .col {
+    width: 50%;
+  }
+}
+
+/*=============================================
+=                  POSITION                   =
+=============================================*/
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+  width: 100%;
+  height: 50px;
+  background: #333;
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.navbar a {
+  color: white;
+  /* text-decoration: underline; */
+  text-decoration: none;
+}
+
+.navbar-list a {
+  margin-right: 20px;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+/* mobile web <= 600px */
+@media (max-width: 600px) {
+  .navbar-list {
+    position: fixed;
+    left: -200px;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background: black;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+  }
+  .navbar-list a {
+    display: block;
+    padding: 10px 20px;
+  }
+  .navbar-toggler {
+    border: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+  }
+  .line {
+    width: 25px;
+    height: 2px;
+    background: white;
+    position: relative;
+    /* transform: rotateZ(45deg); */
+  }
+}
+
+.relative-btn {
+  border: none;
+  height: 40px;
+  color: white;
+  padding: 0 20px;
+  background: #30c39e;
+  cursor: pointer;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  /* transition: all .3s ease; */
+}
+
+.relative-btn:hover {
+  background: #0085ad;
+  -webkit-box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.outer-box {
+  width: 200px;
+  height: 200px;
+  color: white;
+  background: #003666;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.inner-box {
+  width: 80px;
+  height: 80px;
+  background: #2dde98;
+  border-radius: 5px;
+  opacity: .8;
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.inner-box:hover {
+  opacity: 1;
+}
+
+.card {
+  width: 300px;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 0 0 0px rgba(255, 99, 71, 0);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 0 0 0px rgba(255, 99, 71, 0);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 25px 20px rgba(0, 0, 0, 0.2), 0 0 0 3px tomato;
+          box-shadow: 0 25px 20px rgba(0, 0, 0, 0.2), 0 0 0 3px tomato;
+}
+
+.card-header > img {
+  display: block;
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.card:hover .card-header > img {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+.card-body {
+  padding: 10px 10px;
+}
+
+.card-body h4,
+.card-body p {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.card-btns button {
+  color: tomato;
+  font-size: 22px;
+}
+/*# sourceMappingURL=style.css.map */

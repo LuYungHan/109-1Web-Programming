@@ -1,0 +1,308 @@
+<DOCTYPE! html>
+<html lang="zh-tw">
+<head>
+  <title>html note</title>
+  <style>
+    table, th, td{border: 1px solid: black ;}
+    del {background-color: tomato;}
+    ins {background-color: yellow;}
+    div.content {
+      overflow: auto;
+      border: 1px;
+      width: 70%;
+    }
+    .blue {
+      float: right;
+      width: 50%;
+      background-color: #1faadb;
+    }
+    .green {
+      float: left;
+      width: 50%;
+      background-color: #8ebf42;
+    }
+    img.top { vertical-align: top;}
+    img.middle { vertical-align: middle;}
+    img.bottom { vertical-align: bottom;}
+  </style>
+  <body bgcolor="#ffe3b3">
+    <h1 id="top">20201019 HTML PRACTICE</h1>
+    <a href="#week4">Week4</a><br />
+    <a href="#week5">Week5</a><br />
+    <a href="#week6">Week6</a><br />
+    <h2 id="week4">week 4 lecture_text</h2>
+    <h2>h2 heading</h2>
+    <h3>h3 heading</h3>
+    <h4>h4 heading</h4>
+
+
+    <p>bold: this is <b>bold</b>.</p>
+    <p>italic: this is <i>italic</i>.</p>
+    <p>
+      On the 4<sup>th</sup> September you will
+      learn about E=MC<sup>2</sup>.
+    </p>
+    <p>
+      the amount of CO<sub>2</sub> in the
+      atmosphere grew by 2ppm in 2009<sub>1</sub>.
+    </p>
+    <p>
+      <strong>hr: have a line.</strong>
+    </p>
+    <p>
+      <strong>em: </strong> like italic, but they are difference.
+    </p>
+    <hr>
+    <h3>what are b , strong , i , em ???????????</h3>
+    <hr>
+    <p>
+      <b>br: change lines.</b><br>The Earth<br>gets one hundred
+      tones haevier every day<br>due to falling space dust.
+    </p>
+    <p>
+      <abbr title="Professor">Prof</abbr> Stephen Hawking is a theoretical
+      physicist.
+    </p>
+    <p>
+      <acronym title="National Aeronautics and Space Administration">NASA</acronym>
+      do some crazy space stuff.
+    </p>
+    <p><strong>cite(citations): </strong>
+      <cite>A Brief History of Time</cite> by Stephen Hawking has
+      sold over ten million copies worldwide.
+    </p>
+    <p><strong>dfn(definitions): </strong>
+      A <dfn>black bole</dfn> is a <del>region</del> of <ins>space</ins> from which
+      nothing,note <s>even light</s>,can escape.
+    </p>
+    <p>
+      <dfn title="HyperText Markup Language">HTML</dfn>
+      is the standard markup language for creation web pages.
+    </p>
+    <address>
+      <p>
+        <a href="mailto:t108590451@ntut.org.tw">email</a>
+        <a href="https://nportal.ntut.edu.tw/">
+          <img border="0" alt="ntut" src="ntut_logo.png"
+          width="100" height="100"></a>
+      </p>
+    </address>
+    <div class="content">
+      <div class="blue">
+        <p>This is some paragraph inside div tag.</p>
+        <ul>
+          <li>List item 1</li>
+          <li>List item 2</li>
+            <ul>
+              <li>point item 1</li>
+              <li>point item 2</li>
+            </ul>
+          <li>List item 3</li>
+        </ul>
+      </div>
+      <div class="green">
+        <p>This is some paragraph inside div tag.</p>
+        <ol>
+          <li>List item 1</li>
+          <li>List item 2</li>
+            <ul>
+              <li>point item 1</li>
+              <li>point item 2</li>
+            </ul>
+          <li>List item 3</li>
+        </ol>
+      </div>
+    </div>
+    <hr>
+    <h2 id="week5">week 5-01 lists_links</h2>
+    <dl>
+      <dt>Hannah</dt>
+        <dd>She is a senior high school student.</dd>
+        <dt>Ian</dt>
+          <dd>he is a senior high school student.
+            And he is Hannah's brother.</dd>
+          <dd>He likes playing baseball.</dd>
+    </dl>
+    <a href="https://www.google.com/" target="_blank">google</a>(opens in a new window)<br />
+    <a href="home/index.html">Home</a><br />
+    <a href="aboutMe/about.html">About</a><br />
+    <a href="movies/movies.html">Movies</a><br />
+    <a href="contacts/contact.html">Contact</a><br />
+    <a href="mailto:hwwhhw89@gmail.com">Email Hannah</a><br />
+    <a href="#arc-shot">Arc shot</a><br />
+    <a href="#interlude">Interlude</a><br />
+    <a href="#prologue">Prologue</a><br />
+
+
+    <p>
+      Deer or true deer are hoofed ruminant mammals forming the
+family Cervidae. The two main groups of deer are the Cervinae, including
+the muntjac, the elk (wapiti), the red deer, the fallow deer, and the chital;
+and the Capreolinae, including the reindeer (caribou), the roe deer, the mule
+deer, and the moose.Female reindeer, and male deer of all species except the
+Chinese water deer, grow and shed new antlers each year.
+    </p>
+    <h4 id="prologue">Prologue</h4>
+    <hr>
+    <h2>week 5-02 images</h2>
+    <p><img class="top" src="images/gif.gif"
+         alt="error images"
+         title = "A cute deer "
+         width ="300"
+         height= "250"
+         align ="right" />
+                  Deer or true deer are hoofed ruminant mammals forming the
+         family Cervidae. The two main groups of deer are the Cervinae, including
+         the muntjac, the elk (wapiti), the red deer, the fallow deer, and the chital;
+         and the Capreolinae, including the reindeer (caribou), the roe deer, the mule
+         deer, and the moose.Female reindeer, and male deer of all species except the
+         Chinese water deer, grow and shed new antlers each year. In this they differ
+         from permanently horned antelope, which are part of a different family (Bovidae)
+         within the same order of even-toed ungulates (Artiodactyla).</p>
+    <p><img src="images/hahaha.jpg"
+              alt="error images"
+              title = "A cute deer "
+              width ="400"
+              height= "350"
+              align ="left" />
+                       Deer or true deer are hoofed ruminant mammals forming the
+              family Cervidae. The two main groups of deer are the Cervinae, including
+              the muntjac, the elk (wapiti), the red deer, the fallow deer, and the chital;
+              and the Capreolinae, including the reindeer (caribou), the roe deer, the mule
+              deer, and the moose.Female reindeer, and male deer of all species except the
+              Chinese water deer, grow and shed new antlers each year. In this they differ
+              from permanently horned antelope, which are part of a different family (Bovidae)
+              within the same order of even-toed ungulates (Artiodactyla).</p>
+    <p><img src="images/hahaha.jpg"
+                   alt="error images"
+                   title = "A cute deer "
+                   width ="500"
+                   height= "450"
+                   valign ="top" />
+                            Deer or true deer are hoofed ruminant mammals forming the
+                   family Cervidae. The two main groups of deer are the Cervinae, including
+                   the muntjac, the elk (wapiti), the red deer, the fallow deer, and the chital;
+                   and the Capreolinae, including the reindeer (caribou), the roe deer, the mule
+                   deer, and the moose.Female reindeer, and male deer of all species except the
+                   Chinese water deer, grow and shed new antlers each year. In this they differ
+                   from permanently horned antelope, which are part of a different family (Bovidae)
+                   within the same order of even-toed ungulates (Artiodactyla).</p>
+    <p><img src="images/hahaha.jpg"
+                        alt="error images"
+                        title = "A cute deer "
+                        width ="50"
+                        height= "45"
+                        valign ="middle" />
+                                 Deer or true deer are hoofed ruminant mammals forming the
+                        family Cervidae. The two main groups of deer are the Cervinae, including
+                        the muntjac, the elk (wapiti), the red deer, the fallow deer, and the chital;
+                        and the Capreolinae, including the reindeer (caribou), the roe deer, the mule
+                        deer, and the moose.Female reindeer, and male deer of all species except the
+                        Chinese water deer, grow and shed new antlers each year. In this they differ
+                        from permanently horned antelope, which are part of a different family (Bovidae)
+                        within the same order of even-toed ungulates (Artiodactyla).</p>
+    <p><img src="images/hahaha.jpg"
+                             alt="error images"
+                             title = "A cute deer "
+                             width ="300"
+                             height= "250"
+                             valign ="bottom" />
+                                      Deer or true deer are hoofed ruminant mammals forming the
+                             family Cervidae. The two main groups of deer are the Cervinae, including
+                             the muntjac, the elk (wapiti), the red deer, the fallow deer, and the chital;
+                             and the Capreolinae, including the reindeer (caribou), the roe deer, the mule
+                             deer, and the moose.Female reindeer, and male deer of all species except the
+                             Chinese water deer, grow and shed new antlers each year. In this they differ
+                             from permanently horned antelope, which are part of a different family (Bovidae)
+                             within the same order of even-toed ungulates (Artiodactyla).</p>
+    <h2 id="week6">week 6 TABLE</h2>
+    <table>
+    <tr>
+      <th></th>
+      <th>9am</th>
+      <th>10am</th>
+      <th>11am</th>
+      <th>12am</th>
+    </tr>
+    <tr>
+      <th>Monday</th>
+      <td colspan="2">Geography</td>
+      <td>Math</td>
+      <td>Art</td>
+    </tr>
+  </table>
+    <table width="400"
+      cellpadding="10"
+      cellspacing="1"
+      border="2"
+      bgcolor="#efefef">
+    <tr>
+      <th bgcolor="#ff9933">Time</th>
+      <th bgcolor="#ff9933">Mon</th>
+      <th bgcolor="#ff9933">Tues</th>
+      <th bgcolor="#ff9933">Wed</th>
+      <th bgcolor="#ff9933">Thus</th>
+      <th bgcolor="#ff9933">Fri</th>
+      <th bgcolor="#ff9933">Sat</th>
+      <th bgcolor="#ff9933">Sun</th>
+
+    </tr>
+    <tr>
+      <th bgcolor="#6699ff">7:30AM</th>
+      <td width="250" colspan="1" bgcolor="#ffcccc">Breakfast</td>
+      <td width="250" colspan="1" bgcolor="#ffcccc">Breakfast</td>
+      <td width="250" colspan="1" bgcolor="#ffcccc">Breakfast</td>
+    </tr>
+   <tr>
+      <th bgcolor="#ff9933">8:00AM</th>
+      <td width="250" rowspan="2" bgcolor="#00cc99">Business: Lecture Bldg B,Rm 256</td>
+      <td width="250" rowspan="3" bgcolor="#E9967A">Physics: Lab Bldg J,Rm 309</td>
+      <td width="250" rowspan="2" bgcolor="#00cc99">Business: Lecture Bldg B,Rm 256</td>
+    </tr>
+  <tr>
+    <th bgcolor="#6699ff">8:30AM</th>
+  </tr>
+    <tr>
+       <th bgcolor="#ff9933">9:00AM</th>
+       <td width="250" rowspan="2" bgcolor="#cccccc">Applied Math Bldg H,Rm 100</td>
+       <td width="250" rowspan="2" bgcolor="#cccccc">Applied Math Bldg H,Rm 100</td>
+     </tr>
+     <tr>
+       <th bgcolor="#6699ff">9:30AM</th>
+       <td></td>
+
+     </tr>
+     <tr>
+       <th bgcolor="#ff9933">10:00AM</th>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <th bgcolor="#6699ff">10:30AM</th>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <th bgcolor="#ff9933">11:00AM</th>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+     <tr>
+       <th bgcolor="#6699ff">11:30AM</th>
+       <td><iframe width="420" height="315"
+       src="https://www.youtube.com/embed/4BY0BaEsPOI">
+     </iframe>
+     </td>
+       <td><iframe width="420" height="315"
+       src="https://www.youtube.com/embed/hEAV9O4p2ZM">https://www.youtube.com/watch?v=hEAV9O4p2ZM
+     </iframe></td>(watch?v= ,change to, embed/ ,then it will be sucessful.)
+       <td></td>
+     </tr>
+  </table>
+  <a href="#top">Top</a>
+  </body>
+</head>
+</html>

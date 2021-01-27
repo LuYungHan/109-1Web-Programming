@@ -1,0 +1,254 @@
+/*=============================================
+=                   GENERAL                   =
+=============================================*/
+
+/* Tell the browser to account for any border 
+and padding in the values you specify for an element's
+ width and height. */
+* {
+    box-sizing: border-box;
+    //border: 1px solid black;
+}
+
+body {
+    /* Set default body margin to 0px */
+    margin: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*=============================================
+=                     FLEX                    =
+=============================================*/
+//用來固定寬度
+.container {
+    max-width: 1000px ;
+    //margin:ｔｏｐ＆ｂｏｔｔｏｍ　ｌｅｆｔ＆ｒｉｇｈｔ；
+    margin: 50px auto ;
+}
+
+//margin是對外做留白
+.row {
+    display: flex ;
+    //Don't resize child element(如果沒做下面那行，它會自動縮放)
+    flex-wrap: wrap ;
+}
+
+.col {
+    //width: 33.3333%
+    width: calc(100%/3);
+    //padding是對內做留白
+    //padding:ｔｏｐ＆ｂｏｔｔｏｍ　ｌｅｆｔ＆ｒｉｇｈｔ；
+    //padding-top:  ;
+    padding: 0px 15px ; 
+}
+
+.col-card {
+    margin-bottom: 30px;
+    //box-shadow: x y blur color;
+    box-shadow: 0px 3px 0px rgb(46, 131, 117);
+    border-radius: 20px ;
+    overflow: hidden ;
+    transition-duration: .3s;
+    position: relative;
+    bottom: 0px ;
+    &:hover{
+        box-shadow: 0px 10px 30px rgb(46, 131, 117);
+        bottom: 20px ;
+    }
+    // when hover col-card effect to img
+    &:hover img{
+        filter:grayscale(0%);
+    }
+    img{
+        width:100%;
+        display: block ;
+        filter: grayscale(100%) ;
+    }
+
+}
+
+.col-card-body{
+    padding: 10px 10px ;
+    h3{
+        margin-top: 0px ;
+    }
+    p{
+        //margin is orange element
+        margin-bottom: 0px ;
+    }
+}
+
+// media query
+
+// common for mobile 576px
+@media(max-width: 700px){
+    // Only effect window width <= 700px
+    .container{
+        width: 100%;
+    }
+    .col{
+       // background: aqua ;
+        width: 100% ;
+    }
+
+    h3{
+        color: red ;
+    }
+}
+
+// width 577 ~991px
+//超出去範圍就無效
+//media可以有兩個條件
+@media(min-width: 577px) and (max-width: 991px){
+    .container{
+        width: 570px;
+    }
+    .col{
+        width: 50% ;
+    }
+}
+
+/*=============================================
+=                  POSITION                   =
+=============================================*/
+.navbar {
+    display: flex;
+    padding: 0 15px;
+    width: 100%;
+    height: 50px;
+    background: #333;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, .4);
+
+    a {
+        color: white;
+        /* text-decoration: underline; */
+        text-decoration: none;
+    }
+}
+
+
+.navbar-list a {
+    margin-right: 20px;
+
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+/* mobile web <= 600px */
+@media (max-width: 600px) {
+    .navbar-list {
+        position: fixed;
+        left: -200px;
+        top: 0;
+        width: 200px;
+        height: 100vh;
+        background: black;
+        transition: all .5s ease-out;
+    }
+
+    // Select elements that have both 
+    // navbar-list and active class.
+    .navbar-list.active {}
+
+    .navbar-list a {
+        display: block;
+        padding: 10px 20px;
+    }
+
+    .navbar-toggler {
+        border: none;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+    }
+
+    .line {
+        width: 25px;
+        height: 2px;
+        background: white;
+        position: relative;
+        /* transform: rotateZ(45deg); */
+    }
+}
+
+.relative-btn {
+    border: none;
+    height: 40px;
+    color: white;
+    padding: 0 20px;
+    background: #30c39e;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, .2);
+
+    /* transition: all .3s ease; */
+    &:hover {
+        background: #0085ad;
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, .2);
+    }
+}
+
+.outer-box {
+    width: 200px;
+    height: 200px;
+    color: white;
+    background: #003666;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.inner-box {
+    width: 80px;
+    height: 80px;
+    background: #2dde98;
+    border-radius: 5px;
+    opacity: .8;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.card {
+    width: 300px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2), 0 0 0 0px rgba(255, 99, 71, 0);
+    transition: all .3s ease;
+
+    &:hover {
+        box-shadow: 0 25px 20px rgba(0, 0, 0, .2), 0 0 0 3px rgba(255, 99, 71, 1);
+    }
+}
+
+
+.card-header>img {
+    display: block;
+    filter: brightness(1);
+    transition: all .3s ease;
+}
+
+.card:hover .card-header>img {
+    filter: brightness(1.2);
+}
+
+.card-body {
+    padding: 10px 10px;
+
+    h4,
+    p {
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+}
+
+.card-header {}
+
+.card-btns {}
+
+.card-btns button {
+    color: tomato;
+    font-size: 22px;
+}

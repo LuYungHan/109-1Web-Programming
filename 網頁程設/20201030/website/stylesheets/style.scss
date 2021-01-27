@@ -1,0 +1,63 @@
+$primary: rgb(226,83,226) ;
+$secondary: #eee;
+h1 { 
+    color : red ;
+}
+
+h2:hover{
+    color : yellowgreen ;
+    background : darken($primary , 20%); 
+}
+
+h2{
+    color : yellowgreen ;
+    background : $primary ; 
+    &:hover{
+        background : darken($primary , 20%);  // darken can let the background deeply
+    }
+}
+p {
+    color : gray ;
+    background: $secondary ;
+}
+
+//select all element in screen
+*{
+    box-sizing: border-box; // border-box is neccessary
+}
+
+body{
+    margin : 0px ; // margin is neccessary 
+}
+header {
+    width : 100% ; // 300px(size to 300)
+    height: 50vh ; // half screen , 100vh (full screen) , 300px(size to 300)
+    background: $primary ;
+    //border: 100px solid black;
+    //padding-top: 100px ;  //
+    display: flex ;
+    //Vertical flex-start(top) | center | flex-end (bottom)
+    align-items: flex-end ;  // set items' destination
+    //Horizontal flex-start(left) | center | flex-end (right)
+    justify-content: center ;
+    text-align: center ;
+}
+
+.card-list{
+    display: flex ;
+    justify-content: flex-start ;
+}
+.card{
+    width:300px ;
+    margin: 15px 15px;  //first 15px is top and bottom's size
+    //second is left and right
+
+    //box-shadow: x y blur color ;
+    box-shadow: 1px 10px 15px black ;
+    .card-body{
+        padding: 10px 10px ;
+    }
+    img{
+        width: 100%
+    }
+}
